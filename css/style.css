@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&family=Roboto:wght@300&display=swap');
+
+*{
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	background-image: url(../img/backgrounds/bubble.png);
+	background-attachment: fixed;
+	overflow: auto;
+}
+
+h1,h2,h3{
+	color: #BD5EF3;
+	font-family: 'Quintessential', cursive;
+}
+
+
+p{
+	color:#817E7E;
+	line-height: 2rem;
+	font-size: 1.6rem;
+}
+
+.botonera {
+		background-color: rgba(238, 188, 247, .5);
+		/*position*/
+		position: sticky;
+		top: 0;
+		/*padding*/
+		padding: 10px 30px;
+		/****display flex****/
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.botonera img{
+		width: 150px;
+	}
+	.botonera ul{
+		/****display flex****/
+		display: flex;
+	}
+
+	.botonera ul li{
+		list-style: none;
+		margin-right: 20px;
+	}
+
+		.botonera ul li a{
+			font-size: 1.8rem;
+			text-decoration: none;
+			color: #5B5959;
+			/*Subrayado animado*/
+			  	background-image: linear-gradient(currentColor, currentColor);
+   				background-position: 0% 100%;
+    			background-repeat: no-repeat;
+    			background-size: 0% 2px;
+    			transition: background-size .3s;
+		}
+
+		/*hover*/
+		.botonera ul li a:hover{
+			color: black;
+			font-weight: 600;
+			/*Subrayado animado*/
+			background-size: 100% 2px;
+		}
+
+
+/* clases camelCase  */
+
+.textDestacado{
+	background-color: rgba(255, 252, 0, .4);
+}
+
+.textBold{
+	font-weight: 600;
+}
+
+.textCenter{
+	text-align: center;
+}
+
+.textRight{
+	text-align: right;
+}
+
+.textLeft{
+	text-align: left;
+}
+
+.bgLight{
+	background-color:rgba(243, 240, 240, .8) ;
+}
+
+.bgDark{
+	background-color: rgba(195, 190, 190, .8);
+}
+
+.btnXl{
+	width:50%;
+	height: 30px;
+	background-color: white;
+	color: violet;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 5px;
+	margin-left: 50px;
+	font-size: 2rem;
+	/****display flex****/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*Clases BEM */
+.encabezado__box--white{
+	text-align: center;
+	background-color: white;
+	/*padding*/
+	padding: 5px 0;
+}
+.encabezado__img--fluid{
+	/*size*/
+	width: 100%;
+}
+
+.novedades__titulo--xxl{
+	font-size: 4rem;
+}
+
+.novedades__titulo--xl{
+	font-size: 3rem;
+}
+
+.novedades__titulo--md{
+	font-size: 2rem;
+	/*margin*/
+	margin-bottom: 30px;
+}
+
+/*Box model - width- height - margin - padding - border*/
+/*Overflox*/
+/*box-sizing*/
+.novedades__articulo{
+	width:98%;
+	height:auto;
+	overflow: hidden;
+	padding: 20px 30px;
+	border: solid rgba(238, 188, 247, .5) 2px;
+	box-sizing: border-box;
+	margin: 20px auto;
+}
+
+.pie{
+	/*padding*/
+	padding:30px;
+	/****display flex****/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.pie a{
+	text-decoration: none;
+}
+
+.pie__icon--sm{
+	/*size*/
+	width: 30px;
+}
+
+.pie__titulo--md{
+	font-size: 2rem;
+}
+
+/* productos en promoción*/
+#productos h1,
+#productos h2{
+	text-transform: uppercase;
+	font-size: 3rem;
+	text-align: center;
+	padding: 20px 0;
+	background-color: rgba(255, 255, 255, .7);
+	font-family: Roboto, sans-serif;
+	margin: 20px 0;
+}
+
+#productos .galeria{
+	margin: 20px;
+	/****display flex****/
+	display: flex;
+	justify-content: space-around;
+}
+	#productos .galeria figure{
+		text-align: center;
+		margin: 0 20px;
+	}
+
+		#productos .galeria figure img{
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+			width: 100%;
+		}
+
+		#productos .galeria figure figcaption{
+			font-size: 2.5rem;
+			color: #BD5EF3 ;
+			padding: 10px 0;
+			background-color: white;
+		}
+
+		#productos .galeria p.price{
+			color: #676565;
+			padding-bottom: 10px;
+			background-color: white;
+		}
+
+/* productos destacados*/
+#productos .destacados article{
+	background-color: #BD5EF3 ;
+	/****display flex****/
+	display: flex;
+	align-items: center;
+}
+
+	#productos .destacados article p{
+		font-size: 2rem;
+		line-height: 2.4rem;
+		padding: 50px;
+		margin: 20px auto;
+		color: white;
+	}
+
+	#productos .destacados article h3{
+		color: white;
+		font-size: 3rem;
+		padding-left: 50px;
+		font-family: Roboto, sans-serif;
+	}
+
+/* tienda online*/
+.secondNav{
+	background-color: white;
+	color:#676565 ;
+	padding: 10px ;
+	font-size: 1.3rem;
+	line-height: 1.6em;
+}
+
+.contenedor{
+	display: grid;
+	grid-template-columns: 20% 70% 10%;
+	grid-template-rows: auto auto auto auto;
+	grid-template-areas: "nav nav nav" "header header header" "filtros productos aside" "footer footer footer"
+}
+
+#mainNav{
+	grid-area: nav;
+}
+
+#header{
+	grid-area: header;
+}
+
+#filtros{
+	grid-area: filtros;
+}
+
+#productos{
+	grid-area: productos;
+}
+
+#aside{
+	grid-area: aside;
+}
+
+#footer{
+	grid-area: footer;
+}
+
+/* ============= animaciones ==================== */
+
+@keyframes headerAnimation{
+	0%{background-image: url(../img/headers/header.jpg)}
+	25%{background-image: url(../img/headers/header2.jpg)}
+	50%{background-image: url(../img/headers/header3.jpg)}
+	75%{background-image: url(../img/headers/header4.jpg)}
+	100%{background-image: url(../img/headers/header5.jpg)}
+}
+
+header{
+	height: 40vh;
+	background-size: cover;
+	animation-name: headerAnimation;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+}
