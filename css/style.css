@@ -5,7 +5,16 @@
 	margin: 0;
 	padding: 0;
 }
-
+/*Codigo de Jean */
+#root {
+	color : red;
+	font-size: x-large;
+	animation-duration: 500ms;
+}
+#root {
+	color: blue;
+}
+/*termino de codear jean*/
 
 html{
 	font-size: 62.5%;
